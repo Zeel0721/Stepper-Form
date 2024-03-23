@@ -18,10 +18,7 @@ export default function App() {
   },[])
 
   useEffect(() => {
-    if(users.length !== 0)
-      {
-        localStorage.setItem(LOCAL_STORAGE, JSON.stringify(users))
-      }
+      localStorage.setItem(LOCAL_STORAGE, JSON.stringify(users))
     if(users.length > 0)
     {
       const key = users[users.length - 1].key
